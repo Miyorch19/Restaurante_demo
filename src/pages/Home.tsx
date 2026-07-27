@@ -228,7 +228,7 @@ export default function Home() {
                     {pizzas[2].descripcion}
                   </p>
                 </div>
-                {/* Separador visual inferior en Desktop */}
+
                 <div className="absolute left-0 right-0 -bottom-10 hidden md:flex justify-center pointer-events-none z-10">
                   <img
                     src="https://res.cloudinary.com/dwvegpaaf/image/upload/v1785109381/pizzero_gy9nf3.png"
@@ -236,6 +236,14 @@ export default function Home() {
                     className="w-full object-contain max-h-56 opacity-90"
                   />
                 </div>
+              </div>
+              {/* Final Mobile Separator after last pizza */}
+              <div className="w-full flex justify-center py-4 order-9 md:hidden mt-4">
+                  <img 
+                    src="https://res.cloudinary.com/dwvegpaaf/image/upload/v1785109381/pizzero_gy9nf3.png" 
+                    alt="Pizzero" 
+                    className="w-full object-contain max-h-24 scale-x-[-1]"
+                  />
               </div>
             </>
           )}
