@@ -60,16 +60,16 @@ export default function Home() {
             /Menú/
           </h2>
           
-          {/* Tabs - scrollable horizontally on mobile */}
-          <div className="flex overflow-x-auto w-full md:w-fit border border-accent md:mb-4">
+          {/* Tabs - 2x2 grid on mobile, flex on desktop */}
+          <div className="grid grid-cols-2 md:flex w-full md:w-fit md:border md:border-accent md:mb-4 gap-[1px] md:gap-0 bg-accent md:bg-transparent border border-accent">
             {['Parrilla', 'Pastas', 'Ensaladas', 'Postres'].map((tab) => {
               const isActive = tab === activeTab;
               return (
                 <button 
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`shrink-0 whitespace-nowrap px-6 md:px-8 py-3 md:py-2 text-xs md:text-sm uppercase tracking-widest cursor-pointer transition-colors border-r border-accent last:border-r-0 ${
-                    isActive ? 'bg-accent text-cream' : 'bg-transparent text-accent hover:bg-accent/10'
+                  className={`px-4 md:px-8 py-3 md:py-2 text-[11px] sm:text-xs md:text-sm uppercase tracking-widest cursor-pointer transition-colors md:border-r md:border-accent md:last:border-r-0 ${
+                    isActive ? 'bg-accent text-cream md:text-cream' : 'bg-cream md:bg-transparent text-accent hover:bg-accent/10'
                   }`}
                 >
                   {tab}
@@ -145,7 +145,7 @@ export default function Home() {
                   {pizzas[0]?.imagenes[0] && <img src={pizzas[0].imagenes[0]} alt={pizzas[0].nombre} className="w-full h-full object-cover" />}
                 </div>
               </div>
-              <div className="w-full md:aspect-square relative p-8 pb-4 md:pb-12 md:p-12 flex flex-col justify-start md:justify-center order-1 md:order-2 overflow-visible">
+              <div className="w-full md:aspect-square relative px-4 py-8 md:p-12 flex flex-col justify-start md:justify-center order-1 md:order-2 overflow-visible">
                 <div className="max-w-xs md:max-w-sm mt-0">
                   <h3 className="text-6xl md:text-7xl font-semibold text-accent mb-4 tracking-tight">
                     {pizzas[0].nombre}
@@ -170,14 +170,14 @@ export default function Home() {
           {pizzas[1] && (
             <>
               {/* Mobile Separator */}
-              <div className="w-full flex justify-center py-8 order-3 md:hidden">
+              <div className="w-full flex justify-center py-4 order-3 md:hidden">
                   <img 
                     src="https://res.cloudinary.com/dwvegpaaf/image/upload/v1785109381/pizzero_gy9nf3.png" 
                     alt="Pizzero" 
-                    className="w-full object-contain max-h-48 scale-x-[-1]"
+                    className="w-full object-contain max-h-24 scale-x-[-1]"
                   />
               </div>
-              <div className="w-full md:aspect-square relative p-8 pb-4 md:pb-12 md:p-12 flex flex-col justify-start md:justify-center order-4 md:order-3 overflow-visible">
+              <div className="w-full md:aspect-square relative px-4 py-8 md:p-12 flex flex-col justify-start md:justify-center order-4 md:order-3 overflow-visible">
                 <div className="max-w-xs md:max-w-sm mt-0">
                   <h3 className="text-6xl md:text-7xl font-semibold text-accent mb-4 tracking-tight">
                     {pizzas[1].nombre}
@@ -206,12 +206,20 @@ export default function Home() {
           {/* Prosciutto */}
           {pizzas[2] && (
             <>
-              <div className="w-full aspect-square bg-accent p-4 md:p-6 flex items-center justify-center order-7 md:order-5 mt-4 md:mt-0">
+              <div className="w-full aspect-square bg-accent p-4 md:p-6 flex items-center justify-center order-8 md:order-5 mt-4 md:mt-0">
                 <div className="w-full h-full overflow-hidden">
                   {pizzas[2]?.imagenes[0] && <img src={pizzas[2].imagenes[0]} alt={pizzas[2].nombre} className="w-full h-full object-cover" />}
                 </div>
               </div>
-              <div className="w-full md:aspect-square relative p-8 pb-4 md:pb-12 md:p-12 flex flex-col justify-start md:justify-center order-6 md:order-6 overflow-visible">
+              {/* Mobile Separator (Missing previously) */}
+              <div className="w-full flex justify-center py-4 order-6 md:hidden mt-4">
+                  <img 
+                    src="https://res.cloudinary.com/dwvegpaaf/image/upload/v1785109381/pizzero_gy9nf3.png" 
+                    alt="Pizzero" 
+                    className="w-full object-contain max-h-24"
+                  />
+              </div>
+              <div className="w-full md:aspect-square relative px-4 py-8 md:p-12 flex flex-col justify-start md:justify-center order-7 md:order-6 overflow-visible">
                 <div className="max-w-xs md:max-w-sm mt-0">
                   <h3 className="text-6xl md:text-7xl font-semibold text-accent mb-4 tracking-tight">
                     {pizzas[2].nombre}
