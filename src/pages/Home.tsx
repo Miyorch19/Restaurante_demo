@@ -106,7 +106,7 @@ export default function Home() {
                   <span className="font-bold text-accent text-lg text-right">${item.precio.toFixed(2)}</span>
 
                   {isActive && item.imagenes.length > 0 && (
-                    <div className="col-span-3 col-start-1 md:col-span-2 md:col-start-2 grid grid-cols-3 gap-2 md:gap-3 w-full mt-4 md:mt-3">
+                    <div className="col-span-3 col-start-1 grid grid-cols-3 gap-2 w-full mt-4">
                       {item.imagenes.map((url, i) => (
                         <div key={i} className="aspect-square w-full overflow-hidden">
                           <img src={url} alt={item.nombre} className="w-full h-full object-cover" />
