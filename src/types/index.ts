@@ -5,6 +5,7 @@ export interface MenuItem {
   precio: number;
   categoria: string;
   imagenes: string[]; // Array of full image URLs
+  imagenMenu?: string; // Optional override image for the Menu page
 }
 
 export interface GalleryImage {

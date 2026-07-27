@@ -25,7 +25,7 @@ export const menuItems: MenuItem[] = [
     "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785123844/ojobif1_fengcb.jpg",
     "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785123852/ojobif2_kzcloq.jpg",
     "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785123845/ojobif3_qj8d8d.jpg",
-  ]},
+  ], imagenMenu: "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785123845/ojobif3_qj8d8d.jpg" },
   { id: "m3", nombre: "Tira de Asado", descripcion: "Clásico marinado en hierbas.", precio: 40.00, categoria: "Parrilla", imagenes: [
     "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785123852/tira1_vanrzs.jpg",
     "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785123853/tira2_rhiw31.jpg",
@@ -38,22 +38,70 @@ export const menuItems: MenuItem[] = [
   ]},
   
   // Pastas
-  { id: "pa1", nombre: "Fettuccine Trufado", descripcion: "Pasta con crema de trufa.", precio: 28.00, categoria: "Pastas", imagenes: ["https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125464/pasta_fetuccini_yly6xj.jpg"] },
-  { id: "pa2", nombre: "Ravioles de Calabaza", descripcion: "Con salsa de mantequilla y salvia.", precio: 24.00, categoria: "Pastas", imagenes: ["https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125462/pasta_ravioli_vgzprv.jpg"] },
-  { id: "pa3", nombre: "Lasaña de Carne", descripcion: "Boloñesa de la casa y queso.", precio: 26.00, categoria: "Pastas", imagenes: ["https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125462/pasta_lasagna_xjy6ae.jpg"] },
-  { id: "pa4", nombre: "Espagueti al Pesto", descripcion: "Pasta con pesto genovés fresco.", precio: 22.00, categoria: "Pastas", imagenes: ["https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125461/pasta_pesto_tcj7ph.jpg"] },
+  { id: "pa1", nombre: "Fettuccine Trufado", descripcion: "Pasta con crema de trufa.", precio: 28.00, categoria: "Pastas", imagenes: [
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125464/pasta_fetuccini_yly6xj.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785191276/fetuccini2_s7jxs3.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785191276/fetuccini3_a310iz.jpg",
+  ]},
+  { id: "pa2", nombre: "Ravioles de Calabaza", descripcion: "Con salsa de mantequilla y salvia.", precio: 24.00, categoria: "Pastas", imagenes: [
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125462/pasta_ravioli_vgzprv.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785191276/pasta_ravioli2_wwc5zq.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785191276/pasta_ravioli3_eoftqg.jpg",
+  ]},
+  { id: "pa3", nombre: "Lasaña de Carne", descripcion: "Boloñesa de la casa y queso.", precio: 26.00, categoria: "Pastas", imagenes: [
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125462/pasta_lasagna_xjy6ae.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785191276/pasta_ravioli3_eoftqg.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785191276/pasta_lasagna3_i4ddhu.jpg",
+  ]},
+  { id: "pa4", nombre: "Espagueti al Pesto", descripcion: "Pasta con pesto genovés fresco.", precio: 22.00, categoria: "Pastas", imagenes: [
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125461/pasta_pesto_tcj7ph.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785191276/pasta_pesto2_m9g90n.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785191276/pasta_pesto3_n5x4wq.jpg",
+  ]},
 
   // Ensaladas
-  { id: "e1", nombre: "Ensalada César", descripcion: "Lechuga, croutones y parmesano.", precio: 15.00, categoria: "Ensaladas", imagenes: ["https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125086/ensalada_cesar_gyiej8.jpg"] },
-  { id: "e2", nombre: "Caprese", descripcion: "Tomate, mozzarella fresca y albahaca.", precio: 18.00, categoria: "Ensaladas", imagenes: ["https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125085/ensalada_caprese_pdcoeu.jpg"] },
-  { id: "e3", nombre: "Rúcula y Prosciutto", descripcion: "Con higos y nueces caramelizadas.", precio: 19.00, categoria: "Ensaladas", imagenes: ["https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125084/ensalada_rucula_pbemlc.jpg"] },
-  { id: "e4", nombre: "Mixta de la Casa", descripcion: "Hojas verdes, tomates y vinagreta.", precio: 14.00, categoria: "Ensaladas", imagenes: ["https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125084/ensalada_mixta_lllom8.jpg"] },
+  { id: "e1", nombre: "Ensalada César", descripcion: "Lechuga, croutones y parmesano.", precio: 15.00, categoria: "Ensaladas", imagenes: [
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125086/ensalada_cesar_gyiej8.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785191736/ensalada_cesar2_siyhtb.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785191735/ensalada_cesar3_wmjevf.jpg",
+  ]},
+  { id: "e2", nombre: "Caprese", descripcion: "Tomate, mozzarella fresca y albahaca.", precio: 18.00, categoria: "Ensaladas", imagenes: [
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125085/ensalada_caprese_pdcoeu.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785191735/ensalada_caprese2_homk57.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785191735/ensalada_caprese3_udfdav.jpg",
+  ]},
+  { id: "e3", nombre: "Rúcula y Prosciutto", descripcion: "Con higos y nueces caramelizadas.", precio: 19.00, categoria: "Ensaladas", imagenes: [
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125084/ensalada_rucula_pbemlc.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785191732/ensalada_rucula2_huduxl.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785191732/ensalada_rucula3_uxeqh4.jpg",
+  ]},
+  { id: "e4", nombre: "Mixta de la Casa", descripcion: "Hojas verdes, tomates y vinagreta.", precio: 14.00, categoria: "Ensaladas", imagenes: [
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125084/ensalada_mixta_lllom8.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785191732/ensalada_mixta2_gf6nov.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785191732/ensalada_mixta3_kuzhfg.jpg",
+  ]},
 
   // Postres
-  { id: "po1", nombre: "Tiramisú", descripcion: "Con café, mascarpone y cacao.", precio: 12.00, categoria: "Postres", imagenes: ["https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125752/postre_tiramisu_sa8zdw.jpg"] },
-  { id: "po2", nombre: "Panna Cotta", descripcion: "De crema con frutos rojos.", precio: 10.00, categoria: "Postres", imagenes: ["https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125751/postre_panacota_bjqawi.jpg"] },
-  { id: "po3", nombre: "Volcán de Chocolate", descripcion: "Con centro líquido y helado.", precio: 14.00, categoria: "Postres", imagenes: ["https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125750/postre_volcan_hvtg5u.jpg"] },
-  { id: "po4", nombre: "Flan Casero", descripcion: "Tradicional con dulce de leche.", precio: 9.00, categoria: "Postres", imagenes: ["https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125748/postre_flan_m5b3an.jpg"] },
+  { id: "po1", nombre: "Tiramisú", descripcion: "Con café, mascarpone y cacao.", precio: 12.00, categoria: "Postres", imagenes: [
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125752/postre_tiramisu_sa8zdw.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785192187/postre_tiramisu2_t8wmkn.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785192186/postre_tiramisu3_wn8lky.jpg",
+  ]},
+  { id: "po2", nombre: "Panna Cotta", descripcion: "De crema con frutos rojos.", precio: 10.00, categoria: "Postres", imagenes: [
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125751/postre_panacota_bjqawi.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785192185/postre_panacota2_kfmjk9.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785192185/postre_panacota3_anwwlm.jpg",
+  ]},
+  { id: "po3", nombre: "Volcán de Chocolate", descripcion: "Con centro líquido y helado.", precio: 14.00, categoria: "Postres", imagenes: [
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125750/postre_volcan_hvtg5u.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785192185/postre_volcan2_hrjnpx.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785192185/postre_volcan3_wihayb.jpg",
+  ]},
+  { id: "po4", nombre: "Flan Casero", descripcion: "Tradicional con dulce de leche.", precio: 9.00, categoria: "Postres", imagenes: [
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785125748/postre_flan_m5b3an.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785192184/postre_flan2_jmgnwx.jpg",
+    "https://res.cloudinary.com/dwvegpaaf/image/upload/v1785192184/postre_flan3_jisrxb.jpg",
+  ]},
 
   // Aperitivos
   { id: "ap1", nombre: "Bruschetta al Pomodoro", descripcion: "Pan artesanal tostado con tomate.", precio: 8.00, categoria: "Aperitivos", imagenes: ["https://res.cloudinary.com/dwvegpaaf/image/upload/v1785124735/aperitivios_Pomodoro1_n56c1u.jpg"] },

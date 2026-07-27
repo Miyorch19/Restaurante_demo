@@ -12,9 +12,9 @@ function MenuCard({ item }: { item: MenuItem }) {
       {/* Marco rojo con imagen dentro — solo franja inferior visible delgada */}
       <div className="bg-accent pb-2">
         <div className="aspect-[3/3.2] bg-neutral-300 w-full overflow-hidden">
-          {item.imagenes[0] && (
+          {(item.imagenMenu || item.imagenes[0]) && (
             <img
-              src={item.imagenes[0]}
+              src={item.imagenMenu || item.imagenes[0]}
               alt={item.nombre}
               className="w-full h-full object-cover"
             />
