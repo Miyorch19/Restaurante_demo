@@ -60,15 +60,15 @@ export default function Home() {
             /Menú/
           </h2>
           
-          {/* Tabs - unidas sin gap */}
-          <div className="flex flex-wrap border border-accent w-fit md:mb-4">
+          {/* Tabs - scrollable horizontally on mobile */}
+          <div className="flex overflow-x-auto w-full md:w-fit border border-accent md:mb-4">
             {['Parrilla', 'Pastas', 'Ensaladas', 'Postres'].map((tab) => {
               const isActive = tab === activeTab;
               return (
                 <button 
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`px-6 md:px-8 py-2 text-xs md:text-sm uppercase tracking-widest cursor-pointer transition-colors border-r border-accent last:border-r-0 ${
+                  className={`shrink-0 whitespace-nowrap px-6 md:px-8 py-3 md:py-2 text-xs md:text-sm uppercase tracking-widest cursor-pointer transition-colors border-r border-accent last:border-r-0 ${
                     isActive ? 'bg-accent text-cream' : 'bg-transparent text-accent hover:bg-accent/10'
                   }`}
                 >
@@ -145,7 +145,7 @@ export default function Home() {
                   {pizzas[0]?.imagenes[0] && <img src={pizzas[0].imagenes[0]} alt={pizzas[0].nombre} className="w-full h-full object-cover" />}
                 </div>
               </div>
-              <div className="w-full aspect-square relative p-8 md:p-12 flex flex-col justify-start order-1 md:order-2 overflow-visible">
+              <div className="w-full md:aspect-square relative p-8 pb-4 md:pb-12 md:p-12 flex flex-col justify-start md:justify-center order-1 md:order-2 overflow-visible">
                 <div className="max-w-xs md:max-w-sm mt-0">
                   <h3 className="text-6xl md:text-7xl font-semibold text-accent mb-4 tracking-tight">
                     {pizzas[0].nombre}
@@ -177,7 +177,7 @@ export default function Home() {
                     className="w-full object-contain max-h-48 scale-x-[-1]"
                   />
               </div>
-              <div className="w-full aspect-square relative p-8 md:p-12 flex flex-col justify-start order-4 md:order-3 overflow-visible">
+              <div className="w-full md:aspect-square relative p-8 pb-4 md:pb-12 md:p-12 flex flex-col justify-start md:justify-center order-4 md:order-3 overflow-visible">
                 <div className="max-w-xs md:max-w-sm mt-0">
                   <h3 className="text-6xl md:text-7xl font-semibold text-accent mb-4 tracking-tight">
                     {pizzas[1].nombre}
@@ -206,12 +206,12 @@ export default function Home() {
           {/* Prosciutto */}
           {pizzas[2] && (
             <>
-              <div className="w-full aspect-square bg-accent p-4 md:p-6 flex items-center justify-center order-7 md:order-5 mt-12 md:mt-0">
+              <div className="w-full aspect-square bg-accent p-4 md:p-6 flex items-center justify-center order-7 md:order-5 mt-4 md:mt-0">
                 <div className="w-full h-full overflow-hidden">
                   {pizzas[2]?.imagenes[0] && <img src={pizzas[2].imagenes[0]} alt={pizzas[2].nombre} className="w-full h-full object-cover" />}
                 </div>
               </div>
-              <div className="w-full aspect-square relative p-8 md:p-12 flex flex-col justify-start order-6 md:order-6 overflow-visible">
+              <div className="w-full md:aspect-square relative p-8 pb-4 md:pb-12 md:p-12 flex flex-col justify-start md:justify-center order-6 md:order-6 overflow-visible">
                 <div className="max-w-xs md:max-w-sm mt-0">
                   <h3 className="text-6xl md:text-7xl font-semibold text-accent mb-4 tracking-tight">
                     {pizzas[2].nombre}
